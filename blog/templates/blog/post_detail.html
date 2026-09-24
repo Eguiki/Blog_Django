@@ -12,7 +12,8 @@
    {% if post.published_date %}
        {{ post.published_date }}
     {% endif %} <br>
-    {{ post.text }}
+    {{ post.text }} <br><br>
+    <a href="{% url 'post_edit' pk=post.pk%}">Editar</a>
 {% endblock %}
 </body>
 </html>

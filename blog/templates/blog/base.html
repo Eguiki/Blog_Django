@@ -6,7 +6,12 @@
     <title>Ericks's Blog</title>
 </head>
 <body>
+{% if user.is_authenticated %}
+
 <a href="{% url 'post_new' %}">Adicionar Post</a>
+
+{% endif %}
+
 <h1>BEM VINDO AO MEU BLOG</h1>
 {% block content %}
 {% endblock %}

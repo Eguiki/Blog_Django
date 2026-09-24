@@ -1,5 +1,11 @@
 {% extends 'blog/base.html' %}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Erick's blog</title>
+</head>
+<body>
 {% block content %}
     <h2>New Post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
@@ -7,3 +13,5 @@
     <button type="submit">Save</button>
     </form>
 {% endblock %}
+</body>
+</html>
