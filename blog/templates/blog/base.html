@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ericks's Blog</title>
+</head>
+<body>
+<a href="{% url 'post_new' %}">Adicionar Post</a>
+<h1>BEM VINDO AO MEU BLOG</h1>
+{% block content %}
+{% endblock %}
+</body>
+</html>
